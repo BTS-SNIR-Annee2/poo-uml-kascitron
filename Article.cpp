@@ -3,7 +3,9 @@
 #include <string>
 #include "Article.h"
 using namespace std;
-
+ 
+ 
+ 
 Article::Article(string titre, double prix)
 {
 	this->titre = titre;

@@ -2,7 +2,8 @@
 #include <list>
 #include "Article.h"
 using namespace std;
-
+  
+  
 
 int main() 
 {
