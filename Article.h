@@ -1,5 +1,10 @@
+//Article.h
+
 #ifndef ARTICLE_H
 #define ARTICLE_H
+#include <string>
+#include <iostream>
+using namespace std;
 
 class Article
 {
@@ -8,7 +13,7 @@ class Article
       double prix;
 
    public:
-      Article(string titre="", double prix=0.);
+      Article(string titre=" ", double prix=0);
 
       string getTitre() const;
       double getPrix() const;

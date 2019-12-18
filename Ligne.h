@@ -7,7 +7,8 @@ class Ligne
 {
    private:
       Article *article;
-      long quantite;      
+      long quantite;   
+         
 
    public:
       Ligne(Article *article=NULL, long quantite=0);
@@ -16,9 +17,7 @@ class Ligne
       long getQuantite() const;
       void setArticle(Article *article);
       void setQuantite(long quantite);
-      
       double getMontant() const;
-      
       void afficher();
 };
 

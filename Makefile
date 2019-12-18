@@ -2,7 +2,7 @@ CFLAGS=-Wall
 CC=g++ -g -c $(CFLAGS)
 LD=g++ -g -o
 
-all: testArticle testLigne testCommande
+#all: testArticle testLigne testCommande
 
 testArticle: testArticle.o Article.o
 	$(LD) $@ $^
@@ -16,11 +16,11 @@ testLigne: testLigne.o Article.o Ligne.o
 testLigne.o: testLigne.cpp Article.h Ligne.h
 	$(CC) $<
 
-testCommande: testCommande.o Commande.o Article.o Ligne.o
-	$(LD) $@ $^
+#testCommande: testCommande.o Commande.o Article.o Ligne.o
+#	$(LD) $@ $^
 
-testCommande.o: testCommande.cpp Commande.h Article.h Ligne.h
-	$(CC) $<
+#testCommande.o: testCommande.cpp Commande.h Article.h Ligne.h
+#	$(CC) $<
 
 Article.o: Article.cpp Article.h
 	$(CC) $<
@@ -28,8 +28,8 @@ Article.o: Article.cpp Article.h
 Ligne.o: Ligne.cpp Ligne.h
 	$(CC) $<
 
-Commande.o: Commande.cpp Commande.h
-	$(CC) $<
+#Commande.o: Commande.cpp Commande.h
+#	$(CC) $<
 
 clean:
 	rm -f testCommande testLigne testArticle *.o *~
